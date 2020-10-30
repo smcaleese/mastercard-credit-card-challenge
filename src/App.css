@@ -1,0 +1,106 @@
+html {
+  font-size: 16px;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background-color: #dadada;
+}
+
+input.text {
+  height: 2rem;
+  padding: 1rem;
+  width: 20rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+input:focus {
+  outline: 2px solid #3dbbff;
+}
+
+form#credit-card-form {
+  width: 30rem;
+  background-color: #efefef;
+  border-radius: 0.4rem;
+}
+
+div#input-box {
+  margin: 1rem;
+}
+
+div#credit-card-header-div {
+  width: 30rem;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0.4rem;
+}
+
+div#credit-card-header-div h2 {
+  margin: 2rem;
+}
+
+div.input-group {
+  margin: 2rem;
+}
+
+div.small-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.small-inputs input {
+  width: 8rem;
+}
+
+input#submit-button {
+  width: 20rem;
+  height: 3rem;
+  border: none;
+  background-color: #13a3f3;
+  color: white;
+  outline: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 0.4rem;
+}
+
+input#submit-button:hover {
+  background-color: #3dbbff;
+  cursor: pointer;
+}
+
+ul#error-messages-list {
+  margin: 0 0 4rem 0;
+}
+
+/* For Mobile */
+@media only screen and (max-width: 600px) {
+  html {
+      font-size: 12px;
+  }
+  form#credit-card-form {
+      width: 90vw;
+      background-color: #efefef;
+      border-radius: 0.4rem;
+  }
+  div#credit-card-header-div {
+      width: inherit;
+  }
+  ul#error-messages-list {
+      font-size: 1.4rem;
+  }
+}
